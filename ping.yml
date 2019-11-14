@@ -1,0 +1,9 @@
+---
+- name: test ping
+  hosts: all
+  remote_user: root
+  tasks:
+    - name: 1 ping
+      ping:
+    - name: 2 ping
+      ping:

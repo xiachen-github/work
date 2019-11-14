@@ -1,0 +1,8 @@
+---
+- hosts: web
+  tasks:
+    - shell: mkdir /tmp/cache
+      ignore_errors: True
+    - service:
+        name: httpd
+        state: restarted
